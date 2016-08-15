@@ -1,0 +1,5 @@
+logations:
+  server-url: http://logations.example.com/api/v1
+  api-token: 12345abcde12345abcde12345abcde12345abcde
+  mapbox-api-token: 12345abcde12345abcde12345abcde12345abcde12345abcde12345abcde12345abcde12345abcde12345abcde123
+  mapbox-project-id: username.1234abcd

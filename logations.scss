@@ -1,0 +1,12 @@
+.logations {
+  height: 100%;
+  width: calc(100% - 1rem);
+
+  .map-container {
+    height: 100%;
+
+    .leaflet-control-attribution {
+      background: #FFFFFF;
+    }
+  }
+}

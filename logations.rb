@@ -60,11 +60,11 @@ class LogationsClient
       response_hash = JSON.parse response.body
       yield response_hash
     else
-      ap 'API response error!'
+      ap 'Logations API response error!'
       return false
     end
   rescue
-    ap 'Connection error! Maybe not connected to the internet or server is not running?'
+    ap 'Logations API connection error!'
     return false
   end
 end

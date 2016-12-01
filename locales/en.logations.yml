@@ -1,0 +1,5 @@
+en:
+  logations:
+    label: Label
+    accuracy: Accuracy
+    timestamp: Timestamp

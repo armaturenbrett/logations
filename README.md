@@ -1,0 +1,3 @@
+# Logations widget
+
+![](logations.png)

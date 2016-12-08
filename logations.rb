@@ -51,18 +51,9 @@ class LogationsClient
 
   def api_request(url)
     ap url if @verbose
-    request_object = Net::HTTP::Get.new(url.to_s)
-    response = Net::HTTP.start(url.host, url.port) do |http|
-      http.request request_object
-    end
-
-    if response.is_a?(Net::HTTPSuccess)
-      response_hash = JSON.parse response.body
-      yield response_hash
-    else
-      ap 'Logations API response error!'
-      return false
-    end
+    uri = URI(url)
+    response = Net::HTTP.get(uri)
+    yield JSON.parse(response)
   rescue
     ap 'Logations API connection error!'
     return false
